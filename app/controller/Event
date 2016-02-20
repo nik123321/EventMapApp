@@ -1,0 +1,22 @@
+Ext.define('Eventmap.controller.Event', {
+    extend: 'Eventmap.controller.Event',
+    requires: [
+        'EventMap.controller.Standard',
+        'EventMap.view.PostView',
+        'EventMap.view.PostList'
+        ],
+    config: {
+        storeKey: 'eventStore',
+        formKey: 'eventform',
+        titleKey: 'title',
+        modelKey: 'EventMap.model.Event',
+        touchstarttime: 0,
+        refs: {
+            itemlist: 'eventlist',
+            itemview: 'eventview',
+            mainpanel: 'mainpanel',
+            itemsave: 'eventform #eventsave',
+            itemnew: 'eventview #eventnew',
+        }
+    }
+});
